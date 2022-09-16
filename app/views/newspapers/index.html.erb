@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Newspapers</h1>
+
+<div id="newspapers">
+<%= link_to "New newspaper", new_newspaper_path %>
+  <% @newspapers.each do |newspaper| %>
+    <%= render "shared/card", newspaper: newspaper %>
+  <% end %>
+</div>
+

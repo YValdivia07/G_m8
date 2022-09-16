@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;">
+  <img src="/assets/newspapers" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><%= newspaper.header %></h5>
+    <p class="card-text"><%= newspaper.body[0..150] %> ... </p>
+    <%= link_to "Ver mas", newspaper, class: "btn btn-primary", target: "_blank" %>
+    <%= link_to "Mostrar más de esta categoría", filter_index_path(category_index: newspaper.category_id), class: "btn btn-primary" %>
+  </div>
+</div>
